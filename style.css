@@ -1,5 +1,106 @@
-.fullblock {
-    display: flex;
+body {
+    margin: 0;
     background-color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Hero', 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0px;
+    padding: 8px 30px;
+    font-size: 18px;
+}
+
+.header {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.block {
+    margin: 0;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.block.dark {
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 60px 0px;
+}
+
+.dark h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    padding: 0;
+    margin: 0;
+}
+
+.dark h2 {
+    font-size: 24px;
+    color: #F9FAF8;
+    padding: 0;
+    margin: 0;
+}
+
+.dark img {
+    flex: 1;
+    width: 600px;
+    margin-left: 20px;
+    border-radius: 5%;
+}
+
+.block.quote {
+    background-color: #E5E7EB;
+}
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote strong {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.call {
+    background-color: #3882F6;
+    border-radius: 10px;
+}
+
+.vertical {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
