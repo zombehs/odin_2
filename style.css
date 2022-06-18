@@ -12,16 +12,22 @@ button {
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    border: 0px;
+    border-width: 0;
     padding: 8px 30px;
     font-size: 18px;
+}
+
+.call button {
+    border-width: 3px;
+    border-style: solid;
 }
 
 .header {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-    padding: 16px 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .header ul {
@@ -41,8 +47,7 @@ button {
 
 .block {
     margin: 0;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding: 50px 400px;
 }
 
 .block.dark {
@@ -54,7 +59,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 60px 0px;
+    margin: 20px 0px;
 }
 
 .dark h1 {
@@ -81,26 +86,97 @@ button {
 
 .block.quote {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 500px;
 }
 
 .quote p {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
 }
 
 .quote strong {
     font-size: 16px;
     font-weight: bold;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 .call {
     background-color: #3882F6;
-    border-radius: 10px;
+    color: white;
+    border-radius: 7px;
+    width: 100%;
+    padding: 30px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.call p {
+    padding: 0;
+    margin: 0;
 }
 
 .vertical {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: baseline;
+    margin: 0;
+}
+
+.vertical.light {
+    justify-content: center;
+    align-content: space-around;
+}
+
+.vertical.dark p {
+    text-align: left;
+}
+
+.vertical img {
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-color: #3882F6;
+    border-width: 5px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.vertical p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.light {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.light h1 {
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    margin: 0;
+    padding: 20px 0px;
 }
